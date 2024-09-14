@@ -90,7 +90,7 @@ const AllUsers = () => {
 
                                     {/* Toggle Admin Button */}
                                     <button
-                                        onClick={() => handleAdmin(user._id, user.role)}  // Pass the current role
+                                        onClick={() => handleAdmin(user._id, user.role)} 
                                         className="btn btn-primary"
                                     >
                                         {user.role === 'admin' ? 'Revoke Admin' : 'Make Admin'}  {/* Change button label dynamically */}
