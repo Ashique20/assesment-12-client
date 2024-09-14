@@ -18,7 +18,7 @@ const AllUsers = () => {
         axiosPublic.patch(`/users/${id}`, updateInfo)
             .then(res => {
                 console.log(res);
-                refetch();  // Refetch data to update the table after the status change
+                refetch();  
             });
     };
 
