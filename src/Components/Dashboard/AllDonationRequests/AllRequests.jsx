@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const AllRequests = () => {
     const axiosPublic = useAxiosPublic();
 
-    // Fetch donations using react-query
     const { data: donations = [], refetch } = useQuery({
         queryKey: ['donations'],
         queryFn: async () => {
