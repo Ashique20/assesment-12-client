@@ -11,7 +11,7 @@ const AllRequests = () => {
         queryFn: async () => {
             const res = await axiosPublic.get('/donations');
             console.log(res.data, 'getting data');  
-            return res.data;  // Return the fetched data
+            return res.data;  
         },
     });
 
