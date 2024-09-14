@@ -58,7 +58,7 @@ const AllUsers = () => {
                             <th>user Time</th>
                             <th>Requester Information</th>
                             <th>Status</th>
-                            <th>Actions</th> {/* Added "Actions" heading */}
+                            <th>Actions</th> 
                         </tr>
                     </thead>
                     <tbody>
