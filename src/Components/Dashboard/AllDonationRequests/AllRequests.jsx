@@ -10,7 +10,7 @@ const AllRequests = () => {
         queryKey: ['donations'],
         queryFn: async () => {
             const res = await axiosPublic.get('/donations');
-            console.log(res.data, 'getting data');  // Log the response to see the data in the console
+            console.log(res.data, 'getting data');  
             return res.data;  // Return the fetched data
         },
     });
