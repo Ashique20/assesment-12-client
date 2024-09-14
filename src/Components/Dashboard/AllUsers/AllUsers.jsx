@@ -23,8 +23,7 @@ const AllUsers = () => {
     };
 
     const handleAdmin = (id, currentRole) => {
-        const newRole = currentRole === 'admin' ? 'donor' : 'admin';  // Toggle between 'admin' and 'donor'
-        const updateInfo = { role: newRole };
+        const newRole = currentRole === 'admin' ? 'donor' : 'admin';  
 
         axiosPublic.patch(`/users/${id}`, updateInfo)
             .then(res => {
@@ -34,7 +33,7 @@ const AllUsers = () => {
     };
 
     const handleVolunteer = (id, currentRole) => {
-        const newRole = currentRole === 'volunteer' ? 'donor' : 'volunteer';  // Toggle between 'volunteer' and 'donor'
+        const newRole = currentRole === 'volunteer' ? 'donor' : 'volunteer';  
         const updateInfo = { role: newRole };
 
         axiosPublic.patch(`/users/${id}`, updateInfo)
