@@ -25,7 +25,6 @@ const AllRequests = () => {
             });
     };
 
-    // Handle setting donation status to "cancel"
     const handleCancel = (id) => {
         const updateInfo = { donation_status: 'cancel' };
         axiosPublic.patch(`/donations/${id}`, updateInfo)
