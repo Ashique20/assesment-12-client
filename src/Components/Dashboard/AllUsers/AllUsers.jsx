@@ -14,7 +14,7 @@ const AllUsers = () => {
     });
 
     const handleBlock = (id, currentStatus) => {
-        const updateInfo = { status: currentStatus === 'blocked' ? 'active' : 'blocked' }; // Toggle between 'blocked' and 'active'
+        const updateInfo = { status: currentStatus === 'blocked' ? 'active' : 'blocked' }; 
         axiosPublic.patch(`/users/${id}`, updateInfo)
             .then(res => {
                 console.log(res);
