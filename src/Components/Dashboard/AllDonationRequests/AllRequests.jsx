@@ -21,7 +21,7 @@ const AllRequests = () => {
         axiosPublic.patch(`/donations/${id}`, updateInfo)
             .then(res => {
                 console.log(res.data);  
-                refetch();  // Refetch donations to update the UI
+                refetch();  
             });
     };
 
