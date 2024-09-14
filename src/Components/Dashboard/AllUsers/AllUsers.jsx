@@ -9,7 +9,7 @@ const AllUsers = () => {
         queryFn: async () => {
             const res = await axiosPublic.get(`/users`);
             console.log(res.data, 'getting data');  
-            return res.data;  // Make sure to return the data
+            return res.data; 
         },
     });
 
