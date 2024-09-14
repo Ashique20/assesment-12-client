@@ -20,7 +20,7 @@ const AllRequests = () => {
         const updateInfo = { donation_status: 'done' };
         axiosPublic.patch(`/donations/${id}`, updateInfo)
             .then(res => {
-                console.log(res.data);  // Log the result of the PATCH request
+                console.log(res.data);  
                 refetch();  // Refetch donations to update the UI
             });
     };
