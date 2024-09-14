@@ -15,7 +15,6 @@ const AllRequests = () => {
         },
     });
 
-    // Handle setting donation status to "done"
     const handleDone = (id) => {
         const updateInfo = { donation_status: 'done' };
         axiosPublic.patch(`/donations/${id}`, updateInfo)
