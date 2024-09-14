@@ -88,7 +88,6 @@ const AllUsers = () => {
                                         {user.role === 'volunteer' ? 'Revoke Volunteer' : 'Make Volunteer'}  {/* Change button label dynamically */}
                                     </button>
 
-                                    {/* Toggle Admin Button */}
                                     <button
                                         onClick={() => handleAdmin(user._id, user.role)} 
                                         className="btn btn-primary"
