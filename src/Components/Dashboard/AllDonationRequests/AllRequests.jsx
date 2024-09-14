@@ -35,13 +35,7 @@ const AllRequests = () => {
             });
     };
 
-    const handleDelete=(id)=>{
-        axiosPublic.delete(`/donations/${id}`)
-        .then(res => {
-            console.log(res);
-            refetch();  // Correctly call the refetch function
-        });
-    }
+ 
 
     return (
         <div className="overflow-x-auto">
