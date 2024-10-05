@@ -31,6 +31,8 @@ import SearchDonor from './Components/SearchDonor/SearchDonor';
 import BlogForm from './Components/Dashboard/ContentManagement/BlogForm';
 import ContentManagement from './Components/Dashboard/ContentManagement/ContentMangement';
 import 'react-toastify/dist/ReactToastify.css';
+import ChatBox from './Components/Chat/ChatBox';
+
 
 
 
@@ -54,6 +56,10 @@ const router = createBrowserRouter([
       {
         path: '/searchDonor',
         element:<PrivateRoute><SearchDonor></SearchDonor></PrivateRoute>
+      },
+      {
+        path: '/chat',
+        element:<PrivateRoute><ChatBox></ChatBox></PrivateRoute>
       },
 
     ]
@@ -94,6 +100,7 @@ const router = createBrowserRouter([
         path:'/dashboard/blogs',
         element:<ContentManagement></ContentManagement>
       },
+   
       {
         path:'/dashboard/my-donations-edit/:id',
         loader:({params})=>fetch(`http://localhost:5000/donations/${params.id}`),

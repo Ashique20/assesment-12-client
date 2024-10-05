@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../../Shared/AuthContext/AuthProvider";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
-import axiosPublic from "../../Hooks/axiosPublic"; // Ensure axiosPublic is imported
+import axiosPublic from "../../Hooks/axiosPublic"; 
 
 const HomeDashboard = () => {
     const { user } = useContext(AuthContext);

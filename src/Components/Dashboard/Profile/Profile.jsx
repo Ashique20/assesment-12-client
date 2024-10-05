@@ -60,7 +60,7 @@ const Profile = () => {
             <div className="mx-20 my-8 flex items-center gap-4 border-b-4 p-4">
                 <div className="avatar">
                     <div className="w-32 rounded-full">
-                        <img src={donor[0]?.image} alt="Profile" />
+                        <img src={donor[0]?.photoURL} alt="Profile" />
                     </div>
                 </div>
                 <div>

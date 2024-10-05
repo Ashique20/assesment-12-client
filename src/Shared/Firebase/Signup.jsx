@@ -39,7 +39,7 @@ const SignUp = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    const { email, confirm_password, name: displayName, image, password, blood_group, district, upazila } = data;
+    const { email, confirm_password, name: displayName, image:photoURL, password, blood_group, district, upazila } = data;
 
     // Clear previous errors
     clearErrors();
@@ -58,10 +58,11 @@ const SignUp = () => {
         // Update profile after successful sign-up
         return updateProfile(user, {
           displayName,
+          photoURL
         }).then(() => {
           console.log("User profile updated:", user);
           const userInfo = {
-            email, displayName, blood_group, district, upazila, status: 'active', role: 'donor', image
+            email, displayName, blood_group, district, upazila, status: 'active', role: 'donor', photoURL
           };
           axiosPublic.post('/users', userInfo)
             .then(res => {
