@@ -27,7 +27,7 @@ const ChatBox = () => {
     }
     return (
         <div>
-            {/* {
+            {
 
                 chats?.map(chat => <div>
                     <div className="chat chat-start">
@@ -42,7 +42,7 @@ const ChatBox = () => {
                     </div>
                 </div>)
 
-            } */}
+            }
             <div className="ml-[36%] mt-96">
 
                 <div className=" shadow-2xl flex">
